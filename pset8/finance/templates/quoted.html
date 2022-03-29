@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{symbol}} Lookup
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="row">Symbol</th>
+                <th scope="row">Name</th>
+                <th scope="row">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">{{ symbol }}</th>
+                <th scope="row">{{ name }}</th>
+                <th scope="row">{{ price }}</th>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

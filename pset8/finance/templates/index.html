@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index page
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="row"><strong>Symbol</strong></th>
+                <th scope="row"><strong>N. of Shares</strong></th>
+                <th scope="row"><strong>Current Price per Stock</strong></th>
+                <th scope="row"><strong>Total Value $$</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CASH</td>
+                <td>*</td>
+                <td>*</td>
+                <td>{{ cash }}</td>
+            </tr>
+        {% for key in present %}
+            <tr>
+                {% for values in present[key] %}
+                <td>{{ values }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+            <tr>
+                <td>TOTAL</td>
+                <td>*</td>
+                <td>*</td>
+                <td>{{ total }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

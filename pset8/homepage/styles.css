@@ -1,0 +1,65 @@
+body {
+    background-color: #dfe4ed;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    font: Arial, sans-serif;
+    padding: 5px;
+}
+
+.second {
+    text-align: center;
+    font: Arial, sans-serif;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imggallery {
+    padding: 10px;
+    text-align: center;
+}
+
+.alert {
+    width:40%;
+    text-align:center;
+    margin: auto;
+}
+
+p{
+    padding: 2px;
+    font-size: large;
+}
+
+.centralized
+{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; // 1
+    border-spacing: 0;
+}
+/*I don't understand part of this. Taken from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
+tr {
+    padding: 5px;
+}
+
+th {
+    padding:5px;
+    border:1px solid black;
+}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Histry
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th><strong>Symbol</strong></th>
+                <th><strong>Action</strong></th>
+                <th><strong>Price</strong></th>
+                <th><strong>Shares</strong></th>
+                <th><strong>Date and time</strong></th>
+            </tr>
+            {% for index in transactions %}
+            <tr>
+                <td>{{ index.symbol }}</td>
+                <td>{{ index.type }}</td>
+                <td>{{ index.price }}</td>
+                <td>{{ index.shares }}</td>
+                <td>{{ index.date }}</td>
+            </tr>
+            {% endfor %}
+        </thead>
+    </table>
+{% endblock %}
