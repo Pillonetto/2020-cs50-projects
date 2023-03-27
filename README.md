@@ -1,3 +1,6 @@
-Projects made for Harvard's 2020 CS50 Intro to Computer Science.
+Gabe's practice sets on Harvard's 2020 CS50-Intro to Computer Science.
 
-All files were written in 2020, all images and documents belong to Harvard and the CS50 course.
+Most projects use libraries that should only work on cs50's ide. 
+
+All files were coded in 2020/21.
+
